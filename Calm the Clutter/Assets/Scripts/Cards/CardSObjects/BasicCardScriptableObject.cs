@@ -9,7 +9,7 @@ public struct BasicEffect
     public int effect;
 }
 
-[CreateAssetMenu(fileName = "NewBasicCard", menuName = "ScriptableObjects/BasicCard", order = 1)]
+[CreateAssetMenu(fileName = "NewBasicCard", menuName = "ScriptableObjects/BasicCard")]
 public class BasicCardScriptableObject : ScriptableObject
 {
     public string cardTitle;
