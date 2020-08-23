@@ -49,11 +49,23 @@ public class GameManager : MonoBehaviour
 
     public void OnEndTurn()
     {
-        catStats.ChangeStat(EResource.danger, 1);
-        catStats.ChangeStat(EResource.dirty, 1);
-        catStats.ChangeStat(EResource.hunger, 1);
+        catStats.ChangeStat(EResource.danger, 2);
+        catStats.ChangeStat(EResource.dirty, 2);
+        catStats.ChangeStat(EResource.hunger, 2);
         catStats.ChangeStat(EResource.sleep, 1);
 
+        if (catStats.GetStat(EResource.danger) >= 10)
+        {
+            StartCoroutine(ShowImage(attack));
+        }
+        if (catStats.GetStat(EResource.hunger) >= 10)
+        {
+            StartCoroutine(ShowImage(teeth));
+        }
+        if (catStats.GetStat(EResource.dirty) >= 10)
+        {
+            StartCoroutine(ShowImage(dirt));
+        }
     }
 
     bool showingImage;
@@ -68,7 +80,7 @@ public class GameManager : MonoBehaviour
         float timePassed = 0;
 
         Color colour = image.color;
-        while (timePassed < 1)
+        while (colour.a < 1)
         {
             colour.a += 1 * Time.deltaTime;
             image.color = colour;
@@ -76,6 +88,7 @@ public class GameManager : MonoBehaviour
         }
 
         colour.a = 0;
+        image.color = colour;
         showingImage = false;
     }
 }
