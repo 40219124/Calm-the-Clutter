@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DeckManager : MonoBehaviour
 {
+    List<Card> deck = new List<Card>();
     // Start is called before the first frame update
     void Start()
     {
