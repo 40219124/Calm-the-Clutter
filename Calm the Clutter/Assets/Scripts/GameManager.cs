@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour
     {
         catGen.GenerateCat();
         catStats = new CatStats();
+        Danger.SetText("Danger");
+        Hunger.SetText("Hunger");
+        Dirty.SetText("Dirtiness");
+        Sleep.SetText("Sleepiness");
     }
 
     // Update is called once per frame

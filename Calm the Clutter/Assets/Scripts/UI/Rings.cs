@@ -10,12 +10,19 @@ public class Rings : MonoBehaviour
     Image outerRing;
     [SerializeField]
     Image innerRing;
+    [SerializeField]
+    Text statText;
     public float ringFillPercent = 100;
 
     public void SetColour(Color innerColour, Color outerColour)
     {
         outerRing.color = outerColour;
         innerRing.color = innerColour;
+    }
+
+    public void SetText(string text)
+    {
+        statText.text = text;
     }
 
     // Update is called once per frame
