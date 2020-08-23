@@ -49,7 +49,7 @@ public class CatGenerator : MonoBehaviour
         int tailType = Random.Range(0, 2);
         Animator.SetInteger(TailFloofAnimParam, tailType);
 
-        float size = Random.Range(0.1f, 2.1f);
+        float size = Random.Range(0.3f, 2.1f);
         transform.localScale = new Vector3(size, size);
         Debug.Log($"GenerateCat! catBod: {catBod}, catNose: {catNose}, catTail: {catTail}, size = {size}");
     }
