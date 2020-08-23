@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: 5087fc7594b6be04ca55809c204453ee
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1242685119424878081
+    second: idle-cat-tail_0
+  - first:
+      213: 6146312416340315251
+    second: idle-cat-tail_1
+  - first:
+      213: 7324009677002759950
+    second: idle-cat-tail_2
+  - first:
+      213: 6761581340252190212
+    second: idle-cat-tail_3
+  - first:
+      213: 5796236058970638636
+    second: idle-cat-tail_4
+  - first:
+      213: 7940896897703622652
+    second: idle-cat-tail_0
+  - first:
+      213: -7259218225370698859
+    second: idle-cat-tail_1
+  - first:
+      213: 6384189774991757406
+    second: idle-cat-tail_2
+  - first:
+      213: -7618899470613987536
+    second: idle-cat-tail_3
+  - first:
+      213: -8095120969995362279
+    second: idle-cat-tail_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +70,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +100,138 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: idle-cat-tail_0
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 129
+        width: 100
+        height: 136
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf730a1e7abb33e60800000000000000
+      internalID: 7940896897703622652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-cat-tail_1
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 123
+        width: 91
+        height: 161
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59becb92c73124b90800000000000000
+      internalID: -7259218225370698859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-cat-tail_2
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 120
+        width: 82
+        height: 178
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e50901586c2399850800000000000000
+      internalID: 6384189774991757406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-cat-tail_3
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 120
+        width: 75
+        height: 177
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f34a25c4b344690800000000000000
+      internalID: -7618899470613987536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle-cat-tail_4
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 124
+        width: 95
+        height: 174
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9106c991e5a58af80800000000000000
+      internalID: -8095120969995362279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
