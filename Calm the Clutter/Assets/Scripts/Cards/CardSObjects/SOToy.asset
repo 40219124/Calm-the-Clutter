@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: SOToy
   m_EditorClassIdentifier: 
   cardTitle: Toy
+  cardArt: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  cardMana: 1
   cardText: Target energy {Energy} and sleepiness {-,Sleep}.
   effects:
   - resource: 0
