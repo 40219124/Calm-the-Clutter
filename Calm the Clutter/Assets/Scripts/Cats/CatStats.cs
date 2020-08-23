@@ -8,6 +8,7 @@ public class CatStats
     int sleep = 0;
     int hunger = 0;
     int dirty = 0;
+
     public static readonly int max = 10;
 
     public int GetStat(EResource stat)
@@ -50,6 +51,52 @@ public class CatStats
             default:
                 break;
         }
+    }
+
+    public int CalculateAnger()
+    {
+        int output = 0;
+
+        if (danger > 5)
+        {
+            output++;
+        }
+        if (danger > 7)
+        {
+            output++;
+        }
+        if (danger == 10)
+        {
+            output++;
+        }
+
+        if (hunger > 5)
+        {
+            output++;
+        }
+        if (hunger > 7)
+        {
+            output++;
+        }
+        if (hunger == 10)
+        {
+            output++;
+        }
+
+        if (dirty > 5)
+        {
+            output++;
+        }
+        if (dirty > 7)
+        {
+            output++;
+        }
+        if (dirty == 10)
+        {
+            output++;
+        }
+
+        return output;
     }
 
 }

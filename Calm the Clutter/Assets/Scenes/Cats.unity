@@ -356,31 +356,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1677295901}
     m_Modifications:
-    - target: {fileID: 1229974916137243639, guid: 2d83595f4a72e54489d9bf19d26fe4f1,
-        type: 3}
-      propertyPath: CatColours.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1229974916137243639, guid: 2d83595f4a72e54489d9bf19d26fe4f1,
-        type: 3}
-      propertyPath: CatColours.Array.data[4].r
-      value: 0.5566038
-      objectReference: {fileID: 0}
-    - target: {fileID: 1229974916137243639, guid: 2d83595f4a72e54489d9bf19d26fe4f1,
-        type: 3}
-      propertyPath: CatColours.Array.data[4].g
-      value: 0.5566038
-      objectReference: {fileID: 0}
-    - target: {fileID: 1229974916137243639, guid: 2d83595f4a72e54489d9bf19d26fe4f1,
-        type: 3}
-      propertyPath: CatColours.Array.data[4].b
-      value: 0.5566038
-      objectReference: {fileID: 0}
-    - target: {fileID: 1229974916137243639, guid: 2d83595f4a72e54489d9bf19d26fe4f1,
-        type: 3}
-      propertyPath: CatColours.Array.data[4].a
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6404126578983964092, guid: 2d83595f4a72e54489d9bf19d26fe4f1,
         type: 3}
       propertyPath: m_LocalPosition.x
