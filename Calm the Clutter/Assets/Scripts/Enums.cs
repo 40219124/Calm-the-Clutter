@@ -3,9 +3,9 @@
 public enum EResource
 {
     none = -1,
-    energy,
+    danger,
     sleep,
-    clean,
+    dirty,
     hunger,
     health,
     mana

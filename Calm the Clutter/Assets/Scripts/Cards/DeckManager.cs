@@ -95,7 +95,7 @@ public class DeckManager : MonoBehaviour
         int i = 0;
         foreach (ECard card in deck)
         {
-            Instantiate(CardDictionaryRef.Instance.cards[card], new Vector3(i++ * 0.5f, 0, 0), Quaternion.AngleAxis(i * 15 + (-30), Vector3.back));
+            Instantiate(CardDictionaryRef.Instance.cards[card], new Vector3(i++ * 0.5f -1, -4, 0), Quaternion.AngleAxis(i * 15 + (-30), Vector3.back));
 
             yield return new WaitForSeconds(0.10f);
         }

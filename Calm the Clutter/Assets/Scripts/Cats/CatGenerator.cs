@@ -25,12 +25,7 @@ public class CatGenerator : MonoBehaviour
 
     string TailFloofAnimParam = "TailFluff";
 
-    void Awake()
-    {
-        GenerateCat();
-    }
-
-    void GenerateCat()
+    public void GenerateCat()
     {
         int catBod = Random.Range(0, CatColours.Count);
         int catTail = Random.Range(0, CatColours.Count);
@@ -49,7 +44,7 @@ public class CatGenerator : MonoBehaviour
         int tailType = Random.Range(0, 2);
         Animator.SetInteger(TailFloofAnimParam, tailType);
 
-        float size = Random.Range(0.3f, 2.1f);
+        float size = Random.Range(0.5f, 2.1f);
         transform.localScale = new Vector3(size, size);
         Debug.Log($"GenerateCat! catBod: {catBod}, catNose: {catNose}, catTail: {catTail}, size = {size}");
     }

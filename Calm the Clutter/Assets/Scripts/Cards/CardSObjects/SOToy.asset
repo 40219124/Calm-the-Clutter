@@ -15,7 +15,7 @@ MonoBehaviour:
   cardTitle: Toy
   cardArt: {fileID: 21300000, guid: 2a1cd72402b04c641b374df5c308b35a, type: 3}
   cardMana: 1
-  cardText: Target energy {Energy} and sleepiness {-,Sleep}.
+  cardText: Target energy {Danger} and sleepiness {-,Sleep}.
   effects:
   - resource: 0
     effect: -3
