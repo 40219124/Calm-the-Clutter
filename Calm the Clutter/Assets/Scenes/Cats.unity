@@ -121,79 +121,30 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &116065824
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 116065825}
-  - component: {fileID: 116065827}
-  - component: {fileID: 116065826}
-  m_Layer: 5
-  m_Name: Attack
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &116065825
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116065824}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 13.051115, y: 13.051115, z: 13.051115}
-  m_Children: []
-  m_Father: {fileID: 1949059397}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &116065826
+--- !u!114 &116065826 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 116065826, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 7851420560622354382}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116065824}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a28ca02e1a8a20145b2977e7516821b4, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &116065827
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!114 &208231029 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 208231029, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 7851420560622354382}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116065824}
-  m_CullTransparentMesh: 0
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &476662142 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5767196914153897914, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
@@ -502,9 +453,9 @@ MonoBehaviour:
   Hunger: {fileID: 1944218974}
   Dirty: {fileID: 476662142}
   Sleep: {fileID: 1347302678}
-  attack: {fileID: 0}
-  dirt: {fileID: 0}
-  teeth: {fileID: 0}
+  attack: {fileID: 116065826}
+  dirt: {fileID: 1514216981}
+  teeth: {fileID: 208231029}
 --- !u!114 &1347302678 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5767196914403605296, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
@@ -515,6 +466,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d28bac60c8c19764d9429ba8f8e82990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1514216981 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1514216981, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 7851420560622354382}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1590796253 stripped
@@ -659,12 +622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d28bac60c8c19764d9429ba8f8e82990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!224 &1949059397 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7851420560960239243, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
-    type: 3}
-  m_PrefabInstance: {fileID: 7851420560622354382}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7851420560622354382
 PrefabInstance:
   m_ObjectHideFlags: 0

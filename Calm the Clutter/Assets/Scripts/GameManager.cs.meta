@@ -3,7 +3,16 @@ guid: 4d035b0a8a79ff642a849ed624c8984c
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - catGen: {fileID: 1229974916137243639, guid: 2d83595f4a72e54489d9bf19d26fe4f1,
+      type: 3}
+  - Danger: {instanceID: 0}
+  - Hunger: {instanceID: 0}
+  - Dirty: {instanceID: 0}
+  - Sleep: {instanceID: 0}
+  - attack: {instanceID: 0}
+  - dirt: {instanceID: 0}
+  - teeth: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
