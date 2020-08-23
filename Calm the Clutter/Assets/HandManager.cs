@@ -27,7 +27,7 @@ public class HandManager : MonoBehaviour
     void Update()
     {
         SetActiveRaycast(Raycast());
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && raycastI != -1)
         {
             handCards[raycastI].GetComponent<Card>()?.CardClicked();
         }

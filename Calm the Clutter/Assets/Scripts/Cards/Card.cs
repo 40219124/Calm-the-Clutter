@@ -99,7 +99,7 @@ public class Card : MonoBehaviour
     protected virtual void PerformAction() {
         foreach(BasicEffect be in basicCardInfo.effects)
         {
-            // ~~~ change be.resource by be.effect
+            GameManager.catStats.ChangeStat(be.resource, be.effect);
         }
     }
 
