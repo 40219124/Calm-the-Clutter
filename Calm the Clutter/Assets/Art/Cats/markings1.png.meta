@@ -1,22 +1,37 @@
 fileFormatVersion: 2
-guid: 0486ea46230d72341aaf3429a4cb14ab
+guid: 4a64f995c49e73248a76bf68aa86ffd4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8200840888089736286
-    second: idle-eyes-cat_0
+      213: 1133244751244760444
+    second: markings1_0
   - first:
-      213: 1315576551243219006
-    second: idle-eyes-cat_1
+      213: -3584817490974085077
+    second: markings1_1
   - first:
-      213: -864329742336143097
-    second: idle-eyes-cat_2
+      213: 3653495281603001453
+    second: markings1_2
   - first:
-      213: 1358026585942698317
-    second: idle-eyes-cat_3
+      213: 1304389662044620421
+    second: markings1_3
   - first:
-      213: -5933010941972413158
-    second: idle-eyes-cat_4
+      213: -2005471113135221839
+    second: markings1_4
+  - first:
+      213: 8736840185666960132
+    second: markings1_0
+  - first:
+      213: -8063432480438536382
+    second: markings1_1
+  - first:
+      213: -5669036609212655811
+    second: markings1_2
+  - first:
+      213: -6933541477572771387
+    second: markings1_3
+  - first:
+      213: -6685773769096761983
+    second: markings1_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -113,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle-eyes-cat_0
+      name: markings1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 276
-        height: 352
+        width: 344
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ab89e589a2c03e80800000000000000
-      internalID: -8200840888089736286
+      spriteID: 40b790eebdd7f3970800000000000000
+      internalID: 8736840185666960132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-eyes-cat_1
+      name: markings1_1
       rect:
         serializedVersion: 2
-        x: 380
+        x: 389
         y: 0
-        width: 262
-        height: 352
+        width: 299
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e308fa337edd14210800000000000000
-      internalID: 1315576551243219006
+      spriteID: 2473d1581eee81090800000000000000
+      internalID: -8063432480438536382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-eyes-cat_2
+      name: markings1_2
       rect:
         serializedVersion: 2
-        x: 745
+        x: 771
         y: 0
-        width: 287
-        height: 352
+        width: 302
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 701df33cda84104f0800000000000000
-      internalID: -864329742336143097
+      spriteID: d37d1316d398351b0800000000000000
+      internalID: -5669036609212655811
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-eyes-cat_3
+      name: markings1_3
       rect:
         serializedVersion: 2
         x: 1032
         y: 0
         width: 344
-        height: 352
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d49a6aa1cfda8d210800000000000000
-      internalID: 1358026585942698317
+      spriteID: 5c186d9f2cc17cf90800000000000000
+      internalID: -6933541477572771387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-eyes-cat_4
+      name: markings1_4
       rect:
         serializedVersion: 2
         x: 1376
         y: 0
         width: 344
-        height: 352
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,8 +226,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a158a339bf5b9ada0800000000000000
-      internalID: -5933010941972413158
+      spriteID: 18dec540e2c5733a0800000000000000
+      internalID: -6685773769096761983
       vertices: []
       indices: 
       edges: []

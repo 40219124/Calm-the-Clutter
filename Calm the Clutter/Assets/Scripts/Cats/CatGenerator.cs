@@ -17,6 +17,14 @@ public class CatGenerator : MonoBehaviour
     [SerializeField]
     SpriteRenderer Face;
 
+    [SerializeField]
+    List<SpriteRenderer> Markings;
+
+    [SerializeField]
+    Animator Animator;
+
+    string TailFloofAnimParam = "TailFluff";
+
     void Awake()
     {
         GenerateCat();
@@ -25,12 +33,25 @@ public class CatGenerator : MonoBehaviour
     void GenerateCat()
     {
         int catBod = Random.Range(0, CatColours.Count);
+        int catTail = Random.Range(0, CatColours.Count);
         int catNose = Random.Range(0, CatNoseColours.Count);
-        Debug.Log($"catBod: {catBod}, catNose: {catNose}");
 
         Body.color = CatColours[catBod];
-        Tail.color = CatColours[catBod];
+        Tail.color = CatColours[catTail];
         Face.color = CatNoseColours[catNose];
+
+        for (int i = 0; i < Markings.Count; ++i)
+        {
+            int catMark = Random.Range(0, CatColours.Count);
+            Markings[i].color = CatColours[catMark];
+        }
+
+        int tailType = Random.Range(0, 2);
+        Animator.SetInteger(TailFloofAnimParam, tailType);
+
+        float size = Random.Range(0.1f, 2.1f);
+        transform.localScale = new Vector3(size, size);
+        Debug.Log($"GenerateCat! catBod: {catBod}, catNose: {catNose}, catTail: {catTail}, size = {size}");
     }
 
 }

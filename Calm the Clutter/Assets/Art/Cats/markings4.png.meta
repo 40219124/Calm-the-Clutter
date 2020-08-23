@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: 0486ea46230d72341aaf3429a4cb14ab
+guid: 907fc5848b8ba8943aebce2a5d4d7d62
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8200840888089736286
-    second: idle-eyes-cat_0
+      213: 7885064496057461588
+    second: markings4_0
   - first:
-      213: 1315576551243219006
-    second: idle-eyes-cat_1
+      213: 9111158209505412191
+    second: markings4_1
   - first:
-      213: -864329742336143097
-    second: idle-eyes-cat_2
-  - first:
-      213: 1358026585942698317
-    second: idle-eyes-cat_3
-  - first:
-      213: -5933010941972413158
-    second: idle-eyes-cat_4
+      213: -8749166674811973701
+    second: markings4_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -113,13 +107,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle-eyes-cat_0
+      name: markings4_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 276
-        height: 352
+        width: 344
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ab89e589a2c03e80800000000000000
-      internalID: -8200840888089736286
+      spriteID: 45bac8ed1606d6d60800000000000000
+      internalID: 7885064496057461588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-eyes-cat_1
+      name: markings4_1
       rect:
         serializedVersion: 2
-        x: 380
+        x: 393
         y: 0
-        width: 262
-        height: 352
+        width: 295
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,41 +142,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e308fa337edd14210800000000000000
-      internalID: 1315576551243219006
+      spriteID: f5444f95e16517e70800000000000000
+      internalID: 9111158209505412191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-eyes-cat_2
+      name: markings4_2
       rect:
         serializedVersion: 2
-        x: 745
-        y: 0
-        width: 287
-        height: 352
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 701df33cda84104f0800000000000000
-      internalID: -864329742336143097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle-eyes-cat_3
-      rect:
-        serializedVersion: 2
-        x: 1032
+        x: 753
         y: 0
         width: 344
-        height: 352
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,29 +163,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d49a6aa1cfda8d210800000000000000
-      internalID: 1358026585942698317
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle-eyes-cat_4
-      rect:
-        serializedVersion: 2
-        x: 1376
-        y: 0
-        width: 344
-        height: 352
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a158a339bf5b9ada0800000000000000
-      internalID: -5933010941972413158
+      spriteID: bbf852ba347b49680800000000000000
+      internalID: -8749166674811973701
       vertices: []
       indices: 
       edges: []

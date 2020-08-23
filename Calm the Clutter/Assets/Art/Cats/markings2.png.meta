@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 0486ea46230d72341aaf3429a4cb14ab
+guid: e212f7a762869b442bf0608aa26d70b6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8200840888089736286
-    second: idle-eyes-cat_0
+      213: -7739720021878170543
+    second: markings2_0
   - first:
-      213: 1315576551243219006
-    second: idle-eyes-cat_1
+      213: -6561896944740314251
+    second: markings2_1
   - first:
-      213: -864329742336143097
-    second: idle-eyes-cat_2
+      213: -3870378335148629597
+    second: markings2_2
   - first:
-      213: 1358026585942698317
-    second: idle-eyes-cat_3
+      213: 2824828502844772440
+    second: markings2_3
   - first:
-      213: -5933010941972413158
-    second: idle-eyes-cat_4
+      213: 7197371331313635638
+    second: markings2_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle-eyes-cat_0
+      name: markings2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 276
-        height: 352
+        width: 344
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +127,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ab89e589a2c03e80800000000000000
-      internalID: -8200840888089736286
+      spriteID: 15c19fa95adf69490800000000000000
+      internalID: -7739720021878170543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-eyes-cat_1
+      name: markings2_1
       rect:
         serializedVersion: 2
         x: 380
         y: 0
-        width: 262
-        height: 352
+        width: 314
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +148,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e308fa337edd14210800000000000000
-      internalID: 1315576551243219006
+      spriteID: 5735804ce757fe4a0800000000000000
+      internalID: -6561896944740314251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-eyes-cat_2
+      name: markings2_2
       rect:
         serializedVersion: 2
-        x: 745
+        x: 825
         y: 0
-        width: 287
-        height: 352
+        width: 207
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +169,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 701df33cda84104f0800000000000000
-      internalID: -864329742336143097
+      spriteID: 3a1291b0967a94ac0800000000000000
+      internalID: -3870378335148629597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-eyes-cat_3
+      name: markings2_3
       rect:
         serializedVersion: 2
         x: 1032
         y: 0
         width: 344
-        height: 352
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d49a6aa1cfda8d210800000000000000
-      internalID: 1358026585942698317
+      spriteID: 85016778e8ec33720800000000000000
+      internalID: 2824828502844772440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle-eyes-cat_4
+      name: markings2_4
       rect:
         serializedVersion: 2
         x: 1376
         y: 0
         width: 344
-        height: 352
+        height: 400
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,8 +211,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a158a339bf5b9ada0800000000000000
-      internalID: -5933010941972413158
+      spriteID: 631978fa71332e360800000000000000
+      internalID: 7197371331313635638
       vertices: []
       indices: 
       edges: []

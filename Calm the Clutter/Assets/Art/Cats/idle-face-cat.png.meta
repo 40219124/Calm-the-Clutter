@@ -137,9 +137,9 @@ TextureImporter:
       name: idle-face-cat_1
       rect:
         serializedVersion: 2
-        x: 344
+        x: 365
         y: 0
-        width: 295
+        width: 274
         height: 352
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -158,9 +158,9 @@ TextureImporter:
       name: idle-face-cat_2
       rect:
         serializedVersion: 2
-        x: 735
+        x: 750
         y: 0
-        width: 297
+        width: 282
         height: 352
       alignment: 7
       pivot: {x: 0.5, y: 0}
