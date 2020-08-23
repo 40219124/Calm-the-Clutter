@@ -14,6 +14,7 @@ public class DeckManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        GiveStartingDeck();
     }
 
 
@@ -26,15 +27,18 @@ public class DeckManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GiveStartingDeck();
-        StartCoroutine(DisplayCards()); // ~~~ shouldn't be done here
+        //StartCoroutine(DisplayCards()); // ~~~ shouldn't be done here
     }
 
     public List<ECard> DrawHand(int size) {
         for(int i = 0; i < size; ++i)
         {
-            hand.Add(drawPile[i]);
-            drawPile.RemoveAt(i);
+            if(drawPile.Count == 0)
+            {
+                RefreshDrawPile();
+            }
+            hand.Add(drawPile[0]);
+            drawPile.RemoveAt(0);
         }
         return hand;
     }
