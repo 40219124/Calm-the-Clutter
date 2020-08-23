@@ -106,12 +106,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1667387155}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.36, y: 0.07, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.34, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2105175772}
-  m_RootOrder: 1
+  m_Father: {fileID: 6404126577699536427}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1667387157
 SpriteRenderer:
@@ -193,7 +193,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2105175772}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1672741695
 SpriteRenderer:
@@ -275,7 +275,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2105175772}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2012730859
 SpriteRenderer:
@@ -356,7 +356,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1286857843}
-  - {fileID: 1667387156}
   - {fileID: 1672741694}
   - {fileID: 2012730858}
   m_Father: {fileID: 6404126578983964092}
@@ -387,9 +386,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6404126577699536420}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.19, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1667387156}
   m_Father: {fileID: 6404126578824418045}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -432,7 +432,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: -4161802519646699976, guid: 7eb17a7929eae7941bfc28ea5ec4b33c,
+  m_Sprite: {fileID: -3945978918452235403, guid: 7eb17a7929eae7941bfc28ea5ec4b33c,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -551,7 +551,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6404126578824418046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.09, z: 0}
+  m_LocalPosition: {x: -0.14, y: 1.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 6404126577699536427}
@@ -597,8 +597,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: -8200840888089736286, guid: 0486ea46230d72341aaf3429a4cb14ab,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fbf6e0c01b25ba4e9be3d18ad451aa7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -731,15 +730,34 @@ MonoBehaviour:
   - {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   - {r: 0.8773585, g: 0.44282624, b: 0.16967781, a: 1}
   - {r: 0.5188679, g: 0.18168761, b: 0.12482198, a: 1}
+  - {r: 0.5566038, g: 0.5566038, b: 0.5566038, a: 1}
   CatNoseColours:
   - {r: 0, g: 0, b: 0, a: 1}
   - {r: 0.9686275, g: 0.75294125, b: 0.9568628, a: 1}
   Body: {fileID: 6404126578983964034}
   Tail: {fileID: 6404126578088766262}
   Face: {fileID: 6404126577699536426}
+  Eyes: {fileID: 6404126578824418044}
   Markings:
   - {fileID: 1286857844}
   - {fileID: 1667387157}
   - {fileID: 2012730859}
   - {fileID: 1672741695}
+  mouths:
+  - {fileID: -3945978918452235403, guid: 7eb17a7929eae7941bfc28ea5ec4b33c, type: 3}
+  - {fileID: 7946741686711457174, guid: 2defa8063123dd949908034ecac1081b, type: 3}
+  - {fileID: -6625966367610531972, guid: 604729bf7a8c1ab4d913899c1439175c, type: 3}
+  - {fileID: 1301541211850832305, guid: 6f3d1389be3bd8a448a920315a26b5ec, type: 3}
+  - {fileID: 1261513941999263017, guid: 716fdab8c82a9f74d82fed87dd8082e2, type: 3}
+  eyes:
+  - {fileID: 21300000, guid: 5fbf6e0c01b25ba4e9be3d18ad451aa7, type: 3}
+  - {fileID: 21300000, guid: 91a7c6adca3aa3c4c976138adc7b718f, type: 3}
+  - {fileID: 21300000, guid: 50c46fcd915e782479ff95196d4232b9, type: 3}
+  - {fileID: 21300000, guid: 6effd608c3718ee4dabb38e388044af7, type: 3}
+  - {fileID: 21300000, guid: 4fff80e2e330cd942b0f871b0966cebf, type: 3}
+  - {fileID: 21300000, guid: 54ff5686a20aa654d85a1b2063599baa, type: 3}
+  - {fileID: 21300000, guid: 9cc2fdc0cd6cefa4992b8e5762c66cbb, type: 3}
+  - {fileID: 21300000, guid: 91535579550373c47a18ee47676ab7e8, type: 3}
+  - {fileID: 21300000, guid: 13c47c5ce94e74c43b624fa58fd63543, type: 3}
+  - {fileID: 21300000, guid: 5f21fe27502b98b41b5bad78ebc4c17a, type: 3}
   Animator: {fileID: 6404126578983964035}

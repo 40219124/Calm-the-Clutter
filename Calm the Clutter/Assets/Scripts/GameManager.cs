@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     Rings Sleep;
 
-    public CatStats catStats;
+    public static CatStats catStats;
 
     private void Awake()
     {
@@ -31,9 +31,9 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Danger.ringFillPercent = catStats.GetStat(EResource.danger);
-        Hunger.ringFillPercent = catStats.GetStat(EResource.hunger);
-        Dirty.ringFillPercent = catStats.GetStat(EResource.dirty);
-        Sleep.ringFillPercent = catStats.GetStat(EResource.sleep);
+        Danger.ringFillFraction = (float)(catStats.GetStat(EResource.danger)) / (float)CatStats.max;
+        Hunger.ringFillFraction = (float)(catStats.GetStat(EResource.hunger)) / (float)CatStats.max;
+        Dirty.ringFillFraction = (float)(catStats.GetStat(EResource.dirty)) / (float)CatStats.max;
+        Sleep.ringFillFraction = (float)(catStats.GetStat(EResource.sleep)) / (float)CatStats.max;
     }
 }

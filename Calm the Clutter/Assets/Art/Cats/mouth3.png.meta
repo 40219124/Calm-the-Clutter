@@ -1,37 +1,10 @@
 fileFormatVersion: 2
-guid: 7eb17a7929eae7941bfc28ea5ec4b33c
+guid: 604729bf7a8c1ab4d913899c1439175c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3945978918452235403
-    second: idle-face-cat_0
-  - first:
-      213: 2374703172614007502
-    second: idle-face-cat_1
-  - first:
-      213: -4161802519646699976
-    second: idle-face-cat_2
-  - first:
-      213: -8717147696340817571
-    second: idle-face-cat_3
-  - first:
-      213: -513898538680091582
-    second: idle-face-cat_4
-  - first:
-      213: 5187651934537838794
-    second: idle-face-cat_0
-  - first:
-      213: -8292870870681702770
-    second: idle-face-cat_1
-  - first:
-      213: -8565893482483687834
-    second: idle-face-cat_2
-  - first:
-      213: 6383571893907090705
-    second: idle-face-cat_3
-  - first:
-      213: -6113894721570676415
-    second: idle-face-cat_4
+      213: -6625966367610531972
+    second: mouth3_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -73,8 +46,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -128,13 +101,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle-face-cat_0
+      name: mouth3_0
       rect:
         serializedVersion: 2
-        x: 1237
+        x: 125
         y: 195
-        width: 37
-        height: 22
+        width: 17
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,92 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac0fe78f2fd3ef740800000000000000
-      internalID: 5187651934537838794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle-face-cat_1
-      rect:
-        serializedVersion: 2
-        x: 1571
-        y: 214
-        width: 32
-        height: 24
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e8e25d071edc9ec80800000000000000
-      internalID: -8292870870681702770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle-face-cat_2
-      rect:
-        serializedVersion: 2
-        x: 117
-        y: 151
-        width: 37
-        height: 27
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66ed9b00345df1980800000000000000
-      internalID: -8565893482483687834
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle-face-cat_3
-      rect:
-        serializedVersion: 2
-        x: 472
-        y: 132
-        width: 46
-        height: 29
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11def7ed0d0079850800000000000000
-      internalID: 6383571893907090705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle-face-cat_4
-      rect:
-        serializedVersion: 2
-        x: 855
-        y: 120
-        width: 45
-        height: 26
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 141e4aeb425172ba0800000000000000
-      internalID: -6113894721570676415
+      spriteID: c7f83ecc1b6db04a0800000000000000
+      internalID: -6625966367610531972
       vertices: []
       indices: 
       edges: []
