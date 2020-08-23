@@ -38,6 +38,11 @@ public class GameManager : MonoBehaviour
         Sleep.SetText("Sleepiness");
     }
 
+    private void Start()
+    {
+        DeckManager.Instance.NewEncounter();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -66,6 +71,9 @@ public class GameManager : MonoBehaviour
         {
             StartCoroutine(ShowImage(dirt));
         }
+
+        HandManager.Instance.DiscardHand();
+        HandManager.Instance.DrawNewHand();
     }
 
     bool showingImage;

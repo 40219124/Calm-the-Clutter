@@ -133,6 +133,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d28bac60c8c19764d9429ba8f8e82990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &141918030 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1514216981, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897530411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &307095828 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 116065826, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897530411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &519420031 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 3030153988116000111, guid: f68bbe9c102302443b26136bc3afe7bf,
@@ -243,9 +267,9 @@ MonoBehaviour:
   Hunger: {fileID: 626005796}
   Dirty: {fileID: 1878223737}
   Sleep: {fileID: 9467165}
-  attack: {fileID: 0}
-  dirt: {fileID: 0}
-  teeth: {fileID: 0}
+  attack: {fileID: 307095828}
+  dirt: {fileID: 141918030}
+  teeth: {fileID: 2030374886}
 --- !u!114 &1849465196 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7851420561590819132, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
@@ -277,6 +301,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7851420560160762859, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1068390627}
+    - target: {fileID: 7851420560160762859, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnEndTurn
+      objectReference: {fileID: 0}
     - target: {fileID: 7851420560960239242, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
         type: 3}
       propertyPath: m_RenderMode
@@ -414,6 +448,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ba9088dc1bfae945b7aeb76a58871cd, type: 3}
+--- !u!114 &2030374886 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 208231029, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897530411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2102986877 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1229974916137243639, guid: 2d83595f4a72e54489d9bf19d26fe4f1,

@@ -6,10 +6,23 @@ using UnityEngine.EventSystems;
 
 public class HandManager : MonoBehaviour
 {
+    #region singleton
+    private static HandManager instance;
+    public static HandManager Instance
+    {
+        get { return instance; }
+    }
+    #endregion
+    private void Awake()
+    {
+        instance = this;
+    }
+
     DeckManager deck;
     int cardDraws = 5;
     List<ECard> handEnums = new List<ECard>();
     List<Transform> handCards = new List<Transform>();
+    int cardAnimationsRunning = 0;
     List<Vector3> cardPositions = new List<Vector3>();
     int handXMin = -4;
     int handXMax = 4;
@@ -21,15 +34,28 @@ public class HandManager : MonoBehaviour
     {
         deck = DeckManager.Instance;
         DrawNewHand();
-        StartCoroutine(AnimateHandDraw());
     }
 
     void Update()
     {
+        
         SetActiveRaycast(Raycast());
-        if (Input.GetMouseButtonUp(0) && raycastI != -1)
+        if (Input.GetMouseButtonUp(0) && raycastI != -1 && cardAnimationsRunning == 0)
         {
-            handCards[raycastI].GetComponent<Card>()?.CardClicked();
+            activeRaycast.CardClicked();
+
+            activeRaycast.transform.position += Vector3.down * 5.0f;
+            Destroy(activeRaycast.gameObject);
+
+            handCards.RemoveAt(raycastI);
+            deck.DiscardCard(raycastI);
+
+            activeRaycast = null;
+            oldRaycastI = -1;
+            raycastI = -1;
+
+            CalculateCardPositions();
+            StartCoroutine(AnimateHandDraw());
         }
     }
 
@@ -80,13 +106,14 @@ public class HandManager : MonoBehaviour
 
     public void DrawNewHand()
     {
-        handEnums = deck.NewEncounter(cardDraws); // ~~~ should not be using new encounter every time
+        handEnums = deck.DrawHand(cardDraws); // ~~~ should not be using new encounter every time
         foreach (ECard c in handEnums)
         {
             // Spawn card transforms below frame
             handCards.Add(Instantiate(CardDictionaryRef.Instance.cards[c], Vector3.down * 10, Quaternion.identity, gameObject.transform));
         }
         CalculateCardPositions();
+        StartCoroutine(AnimateHandDraw());
     }
 
     private void CalculateCardPositions()
@@ -112,6 +139,8 @@ public class HandManager : MonoBehaviour
 
     private IEnumerator AnimateCardDraw(int cardI)
     {
+        cardAnimationsRunning++;
+
         float progress = 0.0f;
         float goalTime = 0.4f;
         Vector3 origin = handCards[cardI].position;
@@ -135,5 +164,17 @@ public class HandManager : MonoBehaviour
         }
 
         yield return null;
+        cardAnimationsRunning--;
+    }
+
+    public void DiscardHand()
+    {
+        deck.DiscardHand();
+        foreach (Transform t in handCards)
+        {
+            t.position += Vector3.down * 5.0f;
+            Destroy(t.gameObject);
+        }
+        handCards.Clear();
     }
 }
