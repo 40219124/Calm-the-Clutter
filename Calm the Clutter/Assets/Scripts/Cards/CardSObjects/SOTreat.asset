@@ -10,12 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6162175b0d86e7d42901ccecfce87332, type: 3}
-  m_Name: SOToy
+  m_Name: SOTreat
   m_EditorClassIdentifier: 
-  cardTitle: Toy
-  cardArt: {fileID: 21300000, guid: 2a1cd72402b04c641b374df5c308b35a, type: 3}
-  cardMana: 1
-  cardText: Reduce danger by {-,Danger}.
+  cardTitle: Treat
+  cardArt: {fileID: 21300000, guid: 81d60de1438f55a4aaf6c7c336436a25, type: 3}
+  cardMana: 0
+  cardText: Lowers hunger and danger by {-,Hunger}.
   effects:
   - resource: 0
-    effect: -3
+    effect: -1
+  - resource: 3
+    effect: -1

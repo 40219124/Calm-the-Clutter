@@ -31,7 +31,7 @@ public class DeckManager : MonoBehaviour
     }
 
     public List<ECard> DrawHand(int size) {
-        for(int i = 0; i < size; ++i)
+        for(int i = 0; i < size || (drawPile.Count == 0 && discard.Count == 0); ++i)
         {
             if(drawPile.Count == 0)
             {
@@ -41,6 +41,12 @@ public class DeckManager : MonoBehaviour
             drawPile.RemoveAt(0);
         }
         return hand;
+    }
+
+    public void DiscardCard(int cardI)
+    {
+        discard.Add(hand[cardI]);
+        hand.RemoveAt(cardI);
     }
 
     public void DiscardHand()
@@ -59,7 +65,7 @@ public class DeckManager : MonoBehaviour
         }
     }
 
-    public List<ECard> NewEncounter(int size)
+    public void NewEncounter()
     {
         List<int> indices = new List<int>();
         for(int i = 0; i < deck.Count; ++i)
@@ -72,8 +78,6 @@ public class DeckManager : MonoBehaviour
             drawPile.Add(deck[indices[i]]);
             indices.RemoveAt(i);
         }
-
-        return DrawHand(size);
     }
 
     public void EndEncounter()
@@ -87,8 +91,18 @@ public class DeckManager : MonoBehaviour
     {
         deck.Clear();
 
-        for(int i = 0; i < 5; ++i)
+        for(int i = 0; i < 4; ++i)
         {
+            if(i < 2)
+            {
+                deck.Add(ECard.food);
+                deck.Add(ECard.treat);
+                deck.Add(ECard.cleaningSupplies);
+                if(i < 1)
+                {
+                    deck.Add(ECard.humanFood);
+                }
+            }
             deck.Add(ECard.toy);
         }
     }

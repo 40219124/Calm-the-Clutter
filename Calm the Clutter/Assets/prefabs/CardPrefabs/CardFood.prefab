@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7381911299602360142}
   - component: {fileID: 9202177350909810909}
   m_Layer: 0
-  m_Name: CardToy
+  m_Name: CardToy 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d90d6e81a055dd4fb26d9e2eb09608c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basicCardInfo: {fileID: 11400000, guid: b25a97fd2ec14804bb6d52a9b0bbaf48, type: 2}
+  basicCardInfo: {fileID: 11400000, guid: d409352c8b20f3e4c86e7506a9970132, type: 2}
   cardArtImage: {fileID: 6387366106799381002}
   cardTitleText: {fileID: 4935067432647590965}
   cardBodyText: {fileID: 5685890634573769886}

@@ -11,6 +11,12 @@ public class Card : MonoBehaviour
     public Text cardBodyText;
     public Text cardManaText;
 
+    private Vector3 regularScale;
+    private float zoomScale = 1.3f;
+
+    bool isRayTarget = false;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +24,8 @@ public class Card : MonoBehaviour
         cardArtImage.sprite = basicCardInfo.cardArt;
         cardManaText.text = basicCardInfo.cardMana.ToString();
         cardBodyText.text = FormatBodyText(basicCardInfo.cardText);
+
+        regularScale = GetComponentInChildren<Canvas>().transform.localScale;
     }
 
     protected string FormatBodyText(string inText)
@@ -83,16 +91,32 @@ public class Card : MonoBehaviour
         return outText;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CardClicked()
     {
-
+        PerformAction();
     }
 
     protected virtual void PerformAction() {
         foreach(BasicEffect be in basicCardInfo.effects)
         {
-            // ~~~ change be.resource by be.effect
+            GameManager.catStats.ChangeStat(be.resource, be.effect);
         }
+    }
+
+    public void SetAsRaycastTarget(bool isTarget, int cards)
+    {
+        Canvas canvas = GetComponentInChildren<Canvas>();
+        // ~~~ could be cleaner, not as much in the ifs
+        if (isTarget)
+        {
+            canvas.sortingOrder = cards;
+            canvas.transform.localScale = regularScale * zoomScale;
+        }
+        else
+        {
+            canvas.sortingOrder = cards;
+            canvas.transform.localScale = regularScale;
+        }
+
     }
 }

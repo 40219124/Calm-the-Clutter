@@ -16,14 +16,18 @@ MonoBehaviour:
   - card: 0
     transform: {fileID: 7381911299602360142, guid: 8c957ed439eed2648ba3cd24cac4fcbd,
       type: 3}
-  - card: 0
-    transform: {fileID: 0}
-  - card: 0
-    transform: {fileID: 0}
-  - card: 0
-    transform: {fileID: 0}
-  - card: 0
-    transform: {fileID: 0}
+  - card: 1
+    transform: {fileID: 7381911299602360142, guid: 6880374547808a5468d4b8d2dc4b1aae,
+      type: 3}
+  - card: 2
+    transform: {fileID: 7381911299602360142, guid: 04c9f5db7457efc48aa71750ff95e6b3,
+      type: 3}
+  - card: 3
+    transform: {fileID: 7381911299602360142, guid: c3a43452851bf8e48bd2af5491dc3dba,
+      type: 3}
+  - card: 4
+    transform: {fileID: 7381911299602360142, guid: 93fe44404b1c6e8448064780ef9778c8,
+      type: 3}
   - card: 0
     transform: {fileID: 0}
   - card: 0
