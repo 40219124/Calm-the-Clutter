@@ -24,8 +24,7 @@ public class HandManager : MonoBehaviour
     List<Transform> handCards = new List<Transform>();
     int cardAnimationsRunning = 0;
     List<Vector3> cardPositions = new List<Vector3>();
-    int handXMin = -4;
-    int handXMax = 4;
+    float unitsBetweenCards = 1.6f;
     Card activeRaycast = null;
     int oldRaycastI = -1;
     int raycastI = -1;
@@ -56,7 +55,7 @@ public class HandManager : MonoBehaviour
             raycastI = -1;
 
             CalculateCardPositions();
-            StartCoroutine(AnimateHandDraw());
+            StartCoroutine(AnimateHandDraw(0.0f, 0.2f));
         }
     }
 
@@ -119,31 +118,47 @@ public class HandManager : MonoBehaviour
 
     private void CalculateCardPositions()
     {
-        for (int i = 0; i < handCards.Count; ++i)
+        cardPositions.Clear();
+        float handWidth = (handCards.Count - 1) * unitsBetweenCards;
+        float handRadius = handWidth / 2.0f;
+        int cardCount = handCards.Count - 1;
+        if (cardCount == 0)
         {
             cardPositions.Add(new Vector3
-                (handXMin + i * ((handXMax - handXMin) / ((float)handCards.Count - 1)),
-                transform.position.y - 0.3f + (0.2f * Mathf.Sin(Mathf.PI * i / (handCards.Count - 1))),
-                transform.position.z - i * 0.1f));
+                (0,
+                transform.position.y - 0.3f + (0.2f * Mathf.Sin(Mathf.PI/2.0f)),
+                transform.position.z));
+        }
+        else
+        {
+            for (int i = 0; i < handCards.Count; ++i)
+            {
+                cardPositions.Add(new Vector3
+                    (0.0f - handRadius + (i * handWidth / cardCount),
+                    transform.position.y - 0.3f + (0.2f * Mathf.Sin(Mathf.PI * i / cardCount)),
+                    transform.position.z - i * 0.1f));
+            }
         }
     }
 
-    private IEnumerator AnimateHandDraw()
+    private IEnumerator AnimateHandDraw(float cardDelay = 0.2f, float cardTravelTime = 0.4f)
     {
         for (int i = 0; i < handCards.Count; ++i)
         {
-            StartCoroutine(AnimateCardDraw(i));
-            yield return new WaitForSeconds(0.2f);
+            StartCoroutine(AnimateCardDraw(i, cardTravelTime));
+            if (cardDelay > 0.0f)
+            {
+                yield return new WaitForSeconds(cardDelay);
+            }
         }
         yield return null;
     }
 
-    private IEnumerator AnimateCardDraw(int cardI)
+    private IEnumerator AnimateCardDraw(int cardI, float goalTime)
     {
         cardAnimationsRunning++;
 
         float progress = 0.0f;
-        float goalTime = 0.4f;
         Vector3 origin = handCards[cardI].position;
         Vector3 journey = cardPositions[cardI] - origin;
         handCards[cardI].GetComponentInChildren<Canvas>().sortingOrder = cardI;

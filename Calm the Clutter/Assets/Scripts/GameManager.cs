@@ -28,6 +28,8 @@ public class GameManager : MonoBehaviour
 
     public static CatStats catStats;
 
+    private int activeCoroutines = 0;
+
     private void Awake()
     {
         catGen.GenerateCat();
@@ -55,6 +57,10 @@ public class GameManager : MonoBehaviour
 
     public void OnEndTurn()
     {
+        if(activeCoroutines > 0)
+        {
+            return;
+        }
         catStats.ChangeStat(EResource.danger, 2);
         catStats.ChangeStat(EResource.dirty, 2);
         catStats.ChangeStat(EResource.hunger, 2);
@@ -83,6 +89,7 @@ public class GameManager : MonoBehaviour
     bool showingImage;
     IEnumerator ShowImage(Image image)
     {
+        activeCoroutines++;
         while (showingImage)
         {
             yield return null;
@@ -102,5 +109,6 @@ public class GameManager : MonoBehaviour
         colour.a = 0;
         image.color = colour;
         showingImage = false;
+        activeCoroutines--;
     }
 }
