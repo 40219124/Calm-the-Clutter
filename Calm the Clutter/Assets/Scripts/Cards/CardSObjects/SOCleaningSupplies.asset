@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6162175b0d86e7d42901ccecfce87332, type: 3}
+  m_Name: SOCleaningSupplies
+  m_EditorClassIdentifier: 
+  cardTitle: Cleaning Supplies
+  cardArt: {fileID: 21300000, guid: 871d2639ff6878849b24e8981c15ceca, type: 3}
+  cardMana: 2
+  cardText: Remove {-,Dirty} dirtiness from the cat.
+  effects:
+  - resource: 2
+    effect: -5

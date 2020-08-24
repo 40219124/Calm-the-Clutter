@@ -33,16 +33,17 @@ public class HandManager : MonoBehaviour
     void Start()
     {
         deck = DeckManager.Instance;
-        DrawNewHand();
+        
     }
 
     void Update()
     {
         
         SetActiveRaycast(Raycast());
-        if (Input.GetMouseButtonUp(0) && raycastI != -1 && cardAnimationsRunning == 0)
+        if (Input.GetMouseButtonUp(0) && raycastI != -1 && cardAnimationsRunning == 0 && ManaGer.Instance.CardIsPlayable(activeRaycast))
         {
             activeRaycast.CardClicked();
+            ManaGer.Instance.PlayCard(activeRaycast);
 
             activeRaycast.transform.position += Vector3.down * 5.0f;
             Destroy(activeRaycast.gameObject);

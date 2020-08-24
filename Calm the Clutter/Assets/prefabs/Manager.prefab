@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5181596606795879358}
   - component: {fileID: 5181596606795879357}
   - component: {fileID: 5181596606795879356}
+  - component: {fileID: 1068390627}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -62,3 +63,23 @@ MonoBehaviour:
   drawPile: 
   hand: 
   discard: 
+--- !u!114 &1068390627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5181596606795879299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d035b0a8a79ff642a849ed624c8984c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  catGen: {fileID: 0}
+  Danger: {fileID: 0}
+  Hunger: {fileID: 0}
+  Dirty: {fileID: 0}
+  Sleep: {fileID: 0}
+  attack: {fileID: 0}
+  dirt: {fileID: 0}
+  teeth: {fileID: 0}

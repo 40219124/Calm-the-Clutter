@@ -16,5 +16,6 @@ public enum ECard
     toy,
     food,
     treat,
-    humanFood
+    humanFood,
+    cleaningSupplies
 }

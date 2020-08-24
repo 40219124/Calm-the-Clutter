@@ -91,12 +91,13 @@ public class DeckManager : MonoBehaviour
     {
         deck.Clear();
 
-        for(int i = 0; i < 5; ++i)
+        for(int i = 0; i < 4; ++i)
         {
             if(i < 2)
             {
                 deck.Add(ECard.food);
                 deck.Add(ECard.treat);
+                deck.Add(ECard.cleaningSupplies);
                 if(i < 1)
                 {
                     deck.Add(ECard.humanFood);

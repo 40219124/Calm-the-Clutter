@@ -244,13 +244,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d83595f4a72e54489d9bf19d26fe4f1, type: 3}
+--- !u!114 &1003362787 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3107329192647621114, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1897530411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1068390623 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5181596606795879299, guid: 53a9527f15fd4e4419c9e820ad3a888e,
     type: 3}
   m_PrefabInstance: {fileID: 5181596606886988636}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1068390627
+--- !u!114 &1068390627 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1068390627, guid: 53a9527f15fd4e4419c9e820ad3a888e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5181596606886988636}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068390623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d035b0a8a79ff642a849ed624c8984c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1068390628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -259,17 +283,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1068390623}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d035b0a8a79ff642a849ed624c8984c, type: 3}
+  m_Script: {fileID: 11500000, guid: aee8fc52f07cf7f46bebd414d2ceca0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  catGen: {fileID: 2102986877}
-  Danger: {fileID: 1849465196}
-  Hunger: {fileID: 626005796}
-  Dirty: {fileID: 1878223737}
-  Sleep: {fileID: 9467165}
-  attack: {fileID: 307095828}
-  dirt: {fileID: 141918030}
-  teeth: {fileID: 2030374886}
+  manaText: {fileID: 1003362787}
+  manaPerTurn: 3
 --- !u!114 &1849465196 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7851420561590819132, guid: 9ba9088dc1bfae945b7aeb76a58871cd,
@@ -548,6 +566,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1068390627, guid: 53a9527f15fd4e4419c9e820ad3a888e, type: 3}
+      propertyPath: catGen
+      value: 
+      objectReference: {fileID: 2102986877}
+    - target: {fileID: 1068390627, guid: 53a9527f15fd4e4419c9e820ad3a888e, type: 3}
+      propertyPath: Danger
+      value: 
+      objectReference: {fileID: 1849465196}
+    - target: {fileID: 1068390627, guid: 53a9527f15fd4e4419c9e820ad3a888e, type: 3}
+      propertyPath: Hunger
+      value: 
+      objectReference: {fileID: 626005796}
+    - target: {fileID: 1068390627, guid: 53a9527f15fd4e4419c9e820ad3a888e, type: 3}
+      propertyPath: Dirty
+      value: 
+      objectReference: {fileID: 1878223737}
+    - target: {fileID: 1068390627, guid: 53a9527f15fd4e4419c9e820ad3a888e, type: 3}
+      propertyPath: Sleep
+      value: 
+      objectReference: {fileID: 9467165}
+    - target: {fileID: 1068390627, guid: 53a9527f15fd4e4419c9e820ad3a888e, type: 3}
+      propertyPath: attack
+      value: 
+      objectReference: {fileID: 307095828}
+    - target: {fileID: 1068390627, guid: 53a9527f15fd4e4419c9e820ad3a888e, type: 3}
+      propertyPath: dirt
+      value: 
+      objectReference: {fileID: 141918030}
+    - target: {fileID: 1068390627, guid: 53a9527f15fd4e4419c9e820ad3a888e, type: 3}
+      propertyPath: teeth
+      value: 
+      objectReference: {fileID: 2030374886}
     - target: {fileID: 5181596606795879299, guid: 53a9527f15fd4e4419c9e820ad3a888e,
         type: 3}
       propertyPath: m_Name
