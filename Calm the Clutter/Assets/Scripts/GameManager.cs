@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         DeckManager.Instance.NewEncounter();
-        HandManager.Instance.DrawNewHand();
+        StartCoroutine(WaitForNewTurn());
     }
 
     // Update is called once per frame
@@ -61,10 +61,17 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
+
+        catStats.ChangeStat(EResource.sleep, 1);
+        if(catStats.GetStat(EResource.sleep) >= 10)
+        {
+            EncounterVictory();
+            return;
+        }
+
         catStats.ChangeStat(EResource.danger, 2);
         catStats.ChangeStat(EResource.dirty, 2);
         catStats.ChangeStat(EResource.hunger, 2);
-        catStats.ChangeStat(EResource.sleep, 1);
 
         if (catStats.GetStat(EResource.danger) >= 10)
         {
@@ -82,8 +89,27 @@ public class GameManager : MonoBehaviour
         HandManager.Instance.DiscardHand();
         ManaGer.Instance.EndTurn();
 
+        StartCoroutine(WaitForNewTurn());
+    }
+
+    private void EncounterVictory()
+    {
+        // ~~~ calc score
+        // ~~~ reset deck
+        // ~~~ roll new cat
+    }
+
+    IEnumerator WaitForNewTurn()
+    {
+        yield return new WaitForSeconds(1.0f);
+        StartNewTurn();
+    }
+    public void StartNewTurn()
+    {
+
         HandManager.Instance.DrawNewHand();
         ManaGer.Instance.StartTurn();
+
     }
 
     bool showingImage;
