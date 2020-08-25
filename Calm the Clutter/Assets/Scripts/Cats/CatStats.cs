@@ -53,6 +53,14 @@ public class CatStats
         }
     }
 
+    public void Reset()
+    {
+        danger = 0;
+        sleep = 0;
+        hunger = 0;
+        dirty = 0;
+    }
+
     public int CalculateAnger()
     {
         int output = 0;

@@ -26,9 +26,13 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     Image teeth;
 
+    [SerializeField]
+    Text announcerText;
+
     public static CatStats catStats;
 
     private int activeCoroutines = 0;
+    private bool recentlyEndedTurn = false;
 
     private void Awake()
     {
@@ -57,7 +61,7 @@ public class GameManager : MonoBehaviour
 
     public void OnEndTurn()
     {
-        if(activeCoroutines > 0)
+        if(activeCoroutines > 0 || HandManager.Instance.RunningAnimations() || recentlyEndedTurn)
         {
             return;
         }
@@ -65,7 +69,7 @@ public class GameManager : MonoBehaviour
         catStats.ChangeStat(EResource.sleep, 1);
         if(catStats.GetStat(EResource.sleep) >= 10)
         {
-            EncounterVictory();
+            StartCoroutine(EncounterVictory());
             return;
         }
 
@@ -92,17 +96,30 @@ public class GameManager : MonoBehaviour
         StartCoroutine(WaitForNewTurn());
     }
 
-    private void EncounterVictory()
+    private IEnumerator EncounterVictory()
     {
         // ~~~ calc score
+        int score = 30 - catStats.GetStat(EResource.danger) - catStats.GetStat(EResource.hunger) - catStats.GetStat(EResource.dirty);
+        announcerText.text = $"You win!\nScore: {score}";
         // ~~~ reset deck
+        HandManager.Instance.DiscardHand();
+        DeckManager.Instance.EndEncounter();
+        yield return new WaitForSeconds(3.0f);
         // ~~~ roll new cat
+        FindObjectOfType<CatGenerator>().GenerateCat();
+        catStats.Reset();
+        announcerText.text = "";
+        DeckManager.Instance.NewEncounter();
+        StartCoroutine(WaitForNewTurn());
     }
 
     IEnumerator WaitForNewTurn()
     {
+        recentlyEndedTurn = true;
         yield return new WaitForSeconds(1.0f);
         StartNewTurn();
+        yield return new WaitForSeconds(1.0f);
+        recentlyEndedTurn = false;
     }
     public void StartNewTurn()
     {

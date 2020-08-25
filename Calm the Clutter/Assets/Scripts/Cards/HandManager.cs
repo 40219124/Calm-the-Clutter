@@ -35,6 +35,10 @@ public class HandManager : MonoBehaviour
         
     }
 
+    public bool RunningAnimations()
+    {
+        return cardAnimationsRunning > 0;
+    }
     void Update()
     {
         
@@ -143,6 +147,7 @@ public class HandManager : MonoBehaviour
 
     private IEnumerator AnimateHandDraw(float cardDelay = 0.2f, float cardTravelTime = 0.4f)
     {
+        cardAnimationsRunning++;
         for (int i = 0; i < handCards.Count; ++i)
         {
             StartCoroutine(AnimateCardDraw(i, cardTravelTime));
@@ -152,6 +157,7 @@ public class HandManager : MonoBehaviour
             }
         }
         yield return null;
+        cardAnimationsRunning--;
     }
 
     private IEnumerator AnimateCardDraw(int cardI, float goalTime)
